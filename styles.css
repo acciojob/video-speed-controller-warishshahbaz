@@ -1,2 +1,37 @@
 
-/* Your CSS Code here. */
+.player {
+  max-width: 750px;
+  margin: 50px auto;
+  background: #f0f;
+  text-align: center;
+}
+
+.player__video {
+  width: 100%;
+  background: #000;
+}
+
+.player__controls {
+  display: flex;
+  padding: 1rem;
+  background: rgba(0,0,0,0.1);
+}
+
+.player__button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  flex: 0 0 auto;
+}
+
+.player__button:focus {
+  outline: none;
+}
+
+.player__slider {
+  width: 100px;
+  height: 30px;
+  margin: 0;
+  flex: 1;
+}
