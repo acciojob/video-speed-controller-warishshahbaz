@@ -1,37 +1,43 @@
-
+/* Add your custom styles here */
 .player {
-  max-width: 750px;
-  margin: 50px auto;
-  background: #f0f;
-  text-align: center;
+    max-width: 750px;
+    margin: 50px auto;
+    position: relative;
 }
 
 .player__video {
-  width: 100%;
-  background: #000;
+    width: 100%;
 }
 
 .player__controls {
-  display: flex;
-  padding: 1rem;
-  background: rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    flex: 1;
+    position: relative;
+    height: 15px;
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.progress__filled {
+    width: 0;
+    height: 100%;
+    background: #ff5722;
 }
 
 .player__button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  flex: 0 0 auto;
-}
-
-.player__button:focus {
-  outline: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .player__slider {
-  width: 100px;
-  height: 30px;
-  margin: 0;
-  flex: 1;
+    width: 80px;
 }
