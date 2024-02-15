@@ -1,43 +1,48 @@
-/* Add your custom styles here */
+/* Add your CSS styles here */
 .player {
-    max-width: 750px;
-    margin: 50px auto;
-    position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #f0f0f0;
+  padding: 20px;
+  border: 5px solid #333;
 }
 
 .player__video {
-    width: 100%;
+  width: 100%;
 }
 
 .player__controls {
-    display: flex;
-    align-items: center;
-}
-
-.progress {
-    flex: 1;
-    position: relative;
-    height: 15px;
-    background: #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 0 10px;
-}
-
-.progress__filled {
-    width: 0;
-    height: 100%;
-    background: #ff5722;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .player__button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.progress {
+  flex: 1;
+  height: 5px;
+  background: #999;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress__filled {
+  background: #f00;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .player__slider {
-    width: 80px;
+  width: 100px;
+  height: 10px;
 }
